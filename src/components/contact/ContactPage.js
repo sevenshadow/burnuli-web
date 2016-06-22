@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
-import connect from 'react-redux';
+import {connect} from 'react-redux';
 import * as contactActions from '../../actions/contactActions';
 
 
@@ -40,7 +40,7 @@ class ContactPage extends React.Component {
   }
  
   onClickSubmit(event) {
-  //  this.props.dispatch(contactActions.submitContactForm(this.state.contactSubmission));
+    this.props.submitContactForm();
   }
 
   render() {
@@ -67,11 +67,12 @@ class ContactPage extends React.Component {
       </div>
     );
   }
+
 }
 
 ContactPage.propTypes= {
-  dispatch: React.PropTypes.func.isRequired,
-  contactSubmission: React.PropTypes.object.isRequired
+  contactSubmission: React.PropTypes.object.isRequired,
+  submitContactForm: React.PropTypes.func.isRequired
   
 };
 
@@ -81,5 +82,10 @@ function mapStateToProps(state, ownProps) {
 
   };
 }
+function mapDispatchToProps(dispatch) {
+    return {
+        submitContactForm: () => dispatch(contactActions.submitContactForm())
+  };
+}
 
-export default connect(mapStateToProps)(ContactPage);
+export default connect(mapStateToProps, mapDispatchToProps)(ContactPage);
