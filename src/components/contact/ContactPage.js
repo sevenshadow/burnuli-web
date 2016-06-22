@@ -1,5 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router';
+import connect from 'react-redux';
+import * as contactActions from '../../actions/contactActions';
+
 
 class ContactPage extends React.Component {
 
@@ -37,7 +40,7 @@ class ContactPage extends React.Component {
   }
  
   onClickSubmit(event) {
-    console.log(`here`);
+  //  this.props.dispatch(contactActions.submitContactForm(this.state.contactSubmission));
   }
 
   render() {
@@ -45,7 +48,7 @@ class ContactPage extends React.Component {
       <div className="row">
         <div className="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
           <h1>Contact Us</h1>
-            <div className="form-group">
+             <div className="form-group">
               <label htmlFor="contactName">Email address</label>
               <input type="text" onChange={this.onContactNameChange} value={this.state.contactSubmission.contactName} className="form-control" id="contactName" placeholder="Name" />
             </div>
@@ -66,4 +69,17 @@ class ContactPage extends React.Component {
   }
 }
 
-export default ContactPage;
+ContactPage.propTypes= {
+  dispatch: React.PropTypes.func.isRequired,
+  contactSubmission: React.PropTypes.object.isRequired
+  
+};
+
+function mapStateToProps(state, ownProps) {
+  return {
+    contactSubmission: state.contactSubmission
+
+  };
+}
+
+export default connect(mapStateToProps)(ContactPage);
