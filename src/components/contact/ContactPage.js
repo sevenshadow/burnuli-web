@@ -40,7 +40,7 @@ class ContactPage extends React.Component {
   }
  
   onClickSubmit(event) {
-    this.props.submitContactForm();
+    this.props.submitContactForm(this.state.contactSubmission);
   }
 
   render() {
@@ -84,7 +84,7 @@ function mapStateToProps(state, ownProps) {
 }
 function mapDispatchToProps(dispatch) {
     return {
-        submitContactForm: () => dispatch(contactActions.submitContactForm())
+        submitContactForm: (contactSubmission) => dispatch(contactActions.submitContactForm(contactSubmission))
   };
 }
 
