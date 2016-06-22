@@ -5,6 +5,7 @@ import HomePage from './components/home/HomePage';
 import AboutPage from './components/about/AboutPage';
 import ProjectsPage from './components/projects/ProjectsPage';
 import ServicesPage from './components/services/ServicesPage';
+import ContactPage from './components/contact/ContactPage';
 
 export default (
   <Route path="/" component={App}>
@@ -12,6 +13,7 @@ export default (
     <Route path="about" component={AboutPage} />
     <Route path="services" component={ServicesPage} />
     <Route path="projects" component={ProjectsPage} />
+    <Route path="contact" component={ContactPage} />
     
   </Route>
 );
