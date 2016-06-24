@@ -1,34 +1,32 @@
 import React, {PropTypes} from 'react';
+import {Link} from 'react-router';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as projectActions from '../../actions/projectActions';
-import ProjectList from './ProjectList';
 
-class ProjectsPage extends React.Component {
+class ProjectPage extends React.Component {
   constructor(props, context) {
     super(props, context);
   }
 
   render() {
-    const {projects} = this.props;
     return (
       <div>
-        <h1>Projects</h1>
-          <ProjectList projects={projects} />
-      </div>
-    );
+        <h1>Project</h1>
+        <Link to="/projects" className="btn btn-primary btn-lg">Projects</Link>
+      
+       </div>
+    ); 
   }
 }
 
-ProjectsPage.propTypes= {
-  projects: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired
-  
+ProjectPage.propTypes= {
+ 
 };
 
 function mapStateToProps(state, ownProps) {
   return {
-    projects: state.projects
+    state: state
   };
 }
 function mapDispatchToProps(dispatch) {
@@ -37,4 +35,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProjectsPage);
+export default connect(mapStateToProps, mapDispatchToProps)(ProjectPage);

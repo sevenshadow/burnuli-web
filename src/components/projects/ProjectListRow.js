@@ -1,9 +1,13 @@
 import React, {PropTypes} from 'react';
+import {Link} from 'react-router';
+
 
 const ProjectListRow = ({project}) => {
   return (
     <tr>
-      <td>{project.name}</td>
+      <td>
+        <Link to={`/project/${project.id}`} className="btn btn-primary btn-lg">{project.name}</Link>
+      </td>
     </tr>
   );
 

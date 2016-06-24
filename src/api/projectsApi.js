@@ -26,11 +26,6 @@ const projects = [
   }
 ];
 
-//This would be performed on the server in a real app. Just stubbing in.
-const generateId = (author) => {
-  return author.firstName.toLowerCase() + '-' + author.lastName.toLowerCase();
-};
-
 class ProjectsApi {
   static getAllProjects() {
     return new Promise((resolve, reject) => {
