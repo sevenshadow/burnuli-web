@@ -1,8 +1,8 @@
 import  {combineReducers} from 'redux';
-import contactSubmission from './contactReducer';
+import projects from './projectsReducer';
 
 const rootReducer = combineReducers({
-  contactSubmission: contactSubmission
+  projects: projects
 });
 
 export default rootReducer;
