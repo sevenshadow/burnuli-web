@@ -1,15 +1,13 @@
 import React, {PropTypes} from 'react';
-import ProjectListRow from './ProjectListRow';
+import ProjectListItem from './ProjectListItem';
 
 const ProjectList = ({projects}) => {
   return (
-      <table className="table">
-        <tbody>
+      <div className="row">
           {projects.map(project => 
-            <ProjectListRow key={project.id} project={project} />
+            <ProjectListItem key={project.id} project={project} />
           )}
-        </tbody>
-      </table>
+      </div>
     
   );
 

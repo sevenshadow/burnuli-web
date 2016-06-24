@@ -24,7 +24,7 @@ ContactPage.propTypes= {
 
 function mapStateToProps(state, ownProps) {
   return {
-    contactInformation: state.contactInformation
+    contactInformation: state.contactInformation || {}
   };
 }
 function mapDispatchToProps(dispatch) {

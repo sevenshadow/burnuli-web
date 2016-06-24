@@ -1,6 +1,6 @@
 import * as types from '../actions/actionTypes';
 
-export default function projectsReducer(state = {}, action= {}) {
+export default function contactReducer(state = {}, action= {}) {
   switch(action.type) {
     case types.SUBMIT_CONTACT_FORM_SUCCESS:
       return action.contactResponse;  
