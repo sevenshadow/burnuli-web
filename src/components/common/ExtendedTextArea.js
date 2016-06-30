@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 
-const TextInput = ({name, label, onChange, placeholder, value, error}) => {
+const TexExtendedTextArea = ({name, label, onChange, placeholder, value, error}) => {
   let wrapperClass = 'form-group';
   if (error && error.length > 1) {
     wrapperClass += " " + "has-error";
@@ -10,7 +10,7 @@ const TextInput = ({name, label, onChange, placeholder, value, error}) => {
       <div className={wrapperClass} >
           <label htmlFor={name}>{label}</label>
           <div className="field">
-            <input type="text" 
+            <textarea 
               name={name}
               className="form-control"
               placeholder={placeholder}
@@ -22,7 +22,7 @@ const TextInput = ({name, label, onChange, placeholder, value, error}) => {
   );
 };
 
-TextInput.propTypes= {
+TexExtendedTextArea.propTypes= {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
@@ -31,4 +31,4 @@ TextInput.propTypes= {
   error: PropTypes.string.isRequired
 };
 
-export default TextInput;
+export default TexExtendedTextArea;

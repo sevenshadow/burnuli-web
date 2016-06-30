@@ -1,13 +1,14 @@
 import React, {PropTypes} from 'react';
 import TextInput from '../common/TextInput';
+import ExtendedTextArea from '../common/ExtendedTextArea';
 
 const ContactForm = ({contactInformation, onSave, onChange, errors}) => {
   return (
       <form>
         <TextInput 
-          name="email"
-          label="Email"
-          value={contactInformation.email}
+          name="name"
+          label="Name"
+          value={contactInformation.name}
           onChange={onChange}
           error={errors.length} />
          
@@ -18,6 +19,15 @@ const ContactForm = ({contactInformation, onSave, onChange, errors}) => {
           onChange={onChange}
           error={errors.length}
          /> 
+
+         <ExtendedTextArea 
+          name="message"
+          label="Message"
+          value={contactInformation.message}
+          onChange={onChange}
+          error={errors.length}
+         /> 
+         
         <input 
           type="submit"
           className="btn btn-primary"
