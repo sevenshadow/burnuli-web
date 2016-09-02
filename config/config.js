@@ -1,5 +1,5 @@
 production: {
-    root: './dist',
+    root: rootPath,
     app: {
         name: 'express1'
     },
