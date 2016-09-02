@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 
-const TexExtendedTextArea = ({name, label, onChange, placeholder, value, error}) => {
+const ExtendedTextArea = ({name, label, onChange, placeholder, value, error}) => {
   let wrapperClass = 'form-group';
   if (error && error.length > 1) {
     wrapperClass += " " + "has-error";
@@ -22,7 +22,7 @@ const TexExtendedTextArea = ({name, label, onChange, placeholder, value, error})
   );
 };
 
-TexExtendedTextArea.propTypes= {
+ExtendedTextArea.propTypes= {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
@@ -31,4 +31,4 @@ TexExtendedTextArea.propTypes= {
   error: PropTypes.string.isRequired
 };
 
-export default TexExtendedTextArea;
+export default ExtendedTextArea;

@@ -8,10 +8,10 @@ export function submitContactFormSuccess(contactInformation) {
   };
 }
 
-export function submitContactForm(contactInformation) {
-  return function(dispatch, getState) {
-    return contactApi.submitContactForm().then(returnedContactInformation => {
-      dispatch(submitContactFormSuccess(returnedContactInformation)) ;
+export function submitContactForm() {
+  return function(dispatch) {
+    return contactApi.submitContactForm().then(contactResponse => {
+      dispatch(submitContactFormSuccess(contactResponse)) ;
     }).catch(error => {
       throw(error);
     });
