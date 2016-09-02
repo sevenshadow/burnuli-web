@@ -1,4 +1,4 @@
-var port = process.env.port || 8080;
+var port = process.env.port || 80;
 
 var express = require('express');
 var path = require('path');
