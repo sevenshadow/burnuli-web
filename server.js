@@ -1,8 +1,9 @@
 var port = process.env.port || 80;
 
-var express = require('express');
-var path = require('path');
-var open  = require('open');
+import express from 'express';
+import path from 'path';
+import open from 'open';
+import compression from 'compression';
 
 var app = express();
 
