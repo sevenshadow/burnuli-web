@@ -8,7 +8,7 @@ class HomePage extends React.Component {
       <div className="jumbotron">
         <h1>Seven Shadow LLC</h1>
         <p>Financial Analysis and Application Development Services</p>
-        <p><a className="btn btn-primary btn-lg" href="mailto:info@sevenshadow.com">More Information</a></p>
+        <p><a className="btn btn-primary btn-lg" href="mailto:charlie@sevenshadow.com">More Information</a></p>
       </div>
     );
   }
