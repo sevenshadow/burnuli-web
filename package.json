@@ -19,6 +19,9 @@
     "boilerplate",
     "express"
   ],
+  "scripts": {
+    "build": "babel-node tools/build.js"
+  },
   "dependencies": {
     "babel-polyfill": "6.8.0",
     "bootstrap": "3.3.6",
