@@ -26,7 +26,7 @@ webpack(webpackConfig).run((err, stats) => {
   }
   console.log(`Webpack stats: ${stats}`);
 
-  console.log('Build suceededand written to /dist.'.bold.green);
+  console.log('Build suceededand written to /build.'.bold.green);
 
   return 0;
 });

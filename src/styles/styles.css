@@ -1,0 +1,15 @@
+body nav {
+  margin-top:20px;
+  width:100%;
+  text-align: center;
+  
+}
+
+body .navbar {
+  min-height:0px;
+  margin-bottom:20px;
+}
+
+.topNavActive {
+  text-decoration:underline;
+}
