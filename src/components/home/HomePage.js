@@ -13,7 +13,6 @@ class HomePage extends React.Component {
           <div className="col-xs-12 col-sm-12 col-md-12 main-content">
             <h1>Seven Shadow LLC</h1>
             <p>Financial Analysis and Application Development</p>
-            {/*<Header />*/}
             <div>
               <Link to="http://themorningmonte.com" className="btn btn-primary" target="_self">The Morning Monte</Link> 
             </div>
