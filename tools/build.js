@@ -14,7 +14,7 @@ webpack(webpackConfig).run((err, stats) => {
   }
 
   const jsonStats = stats.toJson();
-
+  /* eslint-disable */
   if (jsonStats.hasErrors) {
     console.log('Webpack generated the following errors.'.bold.red);
     return jsonStats.errors.map(error => console.log(error.red));
@@ -24,6 +24,7 @@ webpack(webpackConfig).run((err, stats) => {
     console.log('Webpack generated the following warnings.'.bold.yellow);
     return jsonStats.warnings.map(warning => console.log(warning.yellow));
   }
+  /* eslint-enable */
   console.log(`Webpack stats: ${stats}`);
 
   console.log('Build suceededand written to /build.'.bold.green);
