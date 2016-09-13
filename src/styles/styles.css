@@ -1,11 +1,11 @@
 body nav {
   width:100%;
   margin:0;
-  padding:0
+  padding:0;
 }
 
 body .navbar {
-  min-height:0px;
+  min-height:0;
   margin-bottom:20px;
 }
 
@@ -27,15 +27,15 @@ body .container-fluid {
   color: #dddddd;
 }
 
+h1 {
+  margin-top: 0;
+}
+
 .main-wrapper a {
   color: #dddddd;
   margin-right:10px;
   margin-top:20px;
 }
-.main-wrapper h1 {
-  margin-top: 0px;
-}
-
 .main-content {
   text-align: center;
   padding-top:40px;

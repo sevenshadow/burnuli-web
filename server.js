@@ -1,4 +1,5 @@
-
+// Disabling eslint because we are in a different version of the language for this one file
+/* eslint-disable */
 var express = require('express');
 var http = require('http');
 var favicon = require('express-favicon');

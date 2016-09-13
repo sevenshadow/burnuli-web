@@ -23,12 +23,8 @@ class HomePage extends React.Component {
               <Link to="https://twitter.com/sevenshadow" className="btn btn-success" target="_self">Twitter</Link>
             </div>
             <div className="add-margin-top-20">
-              <Link to="mailto:info@sevenshadow.com" target="_self">info@sevenshadow.com</Link>
+              e. <Link to="mailto:info@sevenshadow.com" target="_self">info@sevenshadow.com</Link> t. <Link to="tel:646-355-8806" target="_self">+1.646.355.8806</Link>
             </div>
-            <div className="add-margin-top-20">
-              <Link to="tel:646-355-8806" target="_self">+1.646.355.8806</Link>
-            </div>
-
           </div>
         </div>
       </div>
