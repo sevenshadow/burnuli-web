@@ -1,5 +1,3 @@
 export default {
-  projects: [],
-  services: [],
-  contactInformation: {}
+  projects: []
 };
