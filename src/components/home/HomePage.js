@@ -14,7 +14,7 @@ class HomePage extends React.Component {
             <h1>Seven Shadow LLC</h1>
             <p>Financial Analysis and Application Development</p>
             <div>
-              <Link to="http://themorningmonte.com" className="btn btn-primary" target="_self">The Morning Monte</Link> 
+              <Link to="http://morningmonte.com" className="btn btn-primary" target="_self">Morning Monte</Link> 
             </div>
             <div>
               <Link to="https://prudena.com" className="btn btn-warning" target="_self">Prudena</Link>
